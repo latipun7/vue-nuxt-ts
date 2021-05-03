@@ -7,9 +7,12 @@ updates:
     directory: "/"
     schedule:
       interval: daily
-      time: "05:00"
+      time: "13:00"
       timezone: Asia/Jakarta
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 7
+    commit-message:
+      prefix: "chore"
+      include: "scope"
     ignore:
       # nuxt 2 use webpack 4, sass-loader 11 needs webpack 5
       - dependency-name: "sass-loader"
@@ -20,6 +23,8 @@ updates:
     directory: "/"
     schedule:
       interval: daily
-      time: "05:00"
+      time: "13:00"
       timezone: Asia/Jakarta
-    open-pull-requests-limit: 10
+    open-pull-requests-limit: 7
+    commit-message:
+      prefix: "chore(ci/cd)"
